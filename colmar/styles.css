@@ -1,0 +1,231 @@
+*{
+    font-family: 'Roboto' sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 1%;
+}
+
+nav > ul{
+display: flex;
+list-style: none;
+align-items: center;
+}
+
+nav li{
+    padding: 0.5em 0.5em;
+}
+
+nav a{
+    color: lightslategray
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > p{
+    display: inline;
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+}
+
+.logo > span{
+    color: rgb(121, 121, 121);
+    font-weight: medium;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.hero-container{
+   background-color: lightgray; 
+   display: flex;
+   padding: 5% 5%;
+}
+
+.hero-container button{
+background-color: darkgray;
+width: 100%;
+height: 3rem;
+}
+
+.hero-left image{
+    width: 85%;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1%;
+    padding: 0 2%;
+}
+
+.hero-right > h1, h4{
+    padding: 5%;
+    color: rgb(50, 50, 50)y;
+}
+
+.hero-right a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.news-container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    color: darkgrey;
+}
+
+.news-left{
+    display: flex;
+    flex-direction: column;
+    color: rgb(50, 50, 50);
+}
+
+news-left img{
+    width: 100%;
+}
+
+news-left-info{
+padding-bottom: 2%;
+}
+
+.news-left-info h2, p{
+padding: 2%;
+}
+
+.news-left-info p{
+    font-size: 80%;
+}
+
+.news-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-right img{
+    width: 10rem;
+}
+
+.news-right h4{
+    font-size: 140%;
+}
+
+.news-right button{
+    background: none;
+    border: 0;
+}
+
+.news-right a{
+    text-decoration: none;
+}
+
+.orientation, .campus, .guest{
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 2%;
+}
+
+.orientation-info, .campus-info, .guest-info{
+    padding: 0 5%;
+    margin-top: 4%;
+    font-size: 80%;
+}
+
+.orientation-info > *, .campus-info > *, .guest-info > *{
+    padding: 2% 0;
+}
+
+.guest{
+    background-color: lightgray;
+    margin: 0 0 2% 0;
+}
+
+.orientation-left-mobile, .campus-left-mobile, .guest-left-mobile{
+    display: none;
+}
+
+.sl-container{
+    background-color: lightgray;
+    padding: 2% 5% 5% 5%;
+} 
+
+.sl-container > h1{
+   text-align: center; 
+   color: rgb(50, 50, 50);
+   padding: 4%;
+}
+
+
+.sl-grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+}
+
+.sl-grid-wrapper img{
+    width: 100%;
+}
+
+.sl-grid-wrapper > *{
+    display: flex;
+    flex-direction: column;
+} 
+
+.sl-info{
+    background-color: white;
+    padding: 5%;
+}
+
+.sl-info > *{
+    padding: 2% 0;
+}
+
+.sl-info > p{
+    font-size: small;
+    color: rgb(121, 121, 121);
+}
+
+.sl-mobile{
+    display: none;
+}
+
+.sl-mobile > *{
+    background-color: lightgray;
+    color: rgb(50, 50, 50);
+}
+
+.sl-mobile h1{
+    padding: 5%;
+}
+
+.urban-info, .other-thesis{
+    display: none;
+}
+
+.thesis-grid{
+    grid-template-columns: 1fr;
+}
+
+ footer {
+    padding: 10% 0 2%;
+ }
+
+ footer ul{
+    display: none;
+ }
+
+ footer p{
+    font-size: 100%;
+ }
