@@ -1,9 +1,80 @@
+html{
+    background-color: #2d364b ;
+}
 .my-page {
 text-align: left;
+padding: 7px;
+color: white;
 }
 
 .lists{
-    text-align: right;
     display: flex;
     justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 1%;
+    list-style-type: none;
 }
+
+nav a{
+    color: #A9C936;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #A9C936   ;
+}
+.profile .profile-image {background-color: #1C4E5C;
+    color: white;
+    border: 13px solid #A9C936 ;
+    padding: 25px;
+    width: 85%; 
+    margin: auto; 
+    display: flex; 
+    gap: 35px; 
+    justify-content: center; 
+    align-items: center;
+    box-shadow:8px 8px 8px #1C4E5C  }
+.my-reasons {background-color: #D4EBF2 ;
+    color: black;
+    border: 10px solid #75BDA9   ;
+    padding: 20px;
+    width: 80%; 
+    margin: auto; 
+    display: flex; 
+    gap: 30px; 
+    justify-content: center; 
+    align-items: center;
+    box-shadow:8px 8px 8px #1C4E5C  }
+
+    .project {background-color: #75BDA9  ;
+    color: black;
+    border: 10px solid #D4EBF2   ;
+    width: 60%; 
+    margin: auto; 
+    display: flex; 
+    gap: 30px; 
+    justify-content: center; 
+    align-items: center;
+    box-shadow:8px 8px 8px #1C4E5C  }
+    
+    .project-lists{
+        
+    }
+    
+    .project-image-one{ 
+        border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #D4EBF2  ;
+    }
+
+    .project-image-two{
+        border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #D4EBF2  ;
+    
+    }
