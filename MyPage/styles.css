@@ -1,0 +1,9 @@
+.my-page {
+text-align: left;
+}
+
+.lists{
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+}
