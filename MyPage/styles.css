@@ -45,7 +45,7 @@ nav a{
     box-shadow:8px 8px 8px black }
 
     
-.my-reasons {background-color: #D4EBF2 ;
+.reasons {background-color: #D4EBF2 ;
     color: black;
     border: 6px dotted #75BDA9   ;
     padding: 20px;
@@ -55,6 +55,10 @@ nav a{
     justify-content: center; 
     align-items: center;
     box-shadow:8px 8px 8px black }
+
+    .my-reasons{
+        text-align: center;
+    }
 
     .project {background-color: white ;
     color: black;
