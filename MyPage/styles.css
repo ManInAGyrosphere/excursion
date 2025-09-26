@@ -1,19 +1,23 @@
 html{
-    background-color: #2d364b ;
+    background-color: #242424 ;
 }
+h1 {
+font-family: Arial, Helvetica, sans-serif;  
+}
+
 .my-page {
-text-align: left;
+text-align:center;
 padding: 7px;
 color: white;
+
 }
 
 .lists{
     display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
+    justify-content: space-around;
     padding: 1%;
     list-style-type: none;
+    
 }
 
 nav a{
@@ -25,56 +29,84 @@ nav a{
     width: 200px;
     height: 200px;
     border: 5px solid #A9C936   ;
+    box-shadow:8px 8px 8px black
 }
-.profile .profile-image {background-color: #1C4E5C;
+.profile .profile-image {background-image: url(images/BeardedDragonWater.avif);
     color: white;
     border: 13px solid #A9C936 ;
     padding: 25px;
-    width: 85%; 
+    width: 80%; 
     margin: auto; 
     display: flex; 
     gap: 35px; 
     justify-content: center; 
     align-items: center;
-    box-shadow:8px 8px 8px #1C4E5C  }
+    text-shadow: 5px 5px 5px black;
+    box-shadow:8px 8px 8px black }
+
+    
 .my-reasons {background-color: #D4EBF2 ;
     color: black;
-    border: 10px solid #75BDA9   ;
+    border: 6px dotted #75BDA9   ;
     padding: 20px;
-    width: 80%; 
+    width: 75%; 
     margin: auto; 
-    display: flex; 
     gap: 30px; 
     justify-content: center; 
     align-items: center;
-    box-shadow:8px 8px 8px #1C4E5C  }
+    box-shadow:8px 8px 8px black }
 
-    .project {background-color: #75BDA9  ;
+    .project {background-color: white ;
     color: black;
-    border: 10px solid #D4EBF2   ;
+    border: 6px solid #1C4E5C   ;
+    padding: 25px;
     width: 60%; 
-    margin: auto; 
-    display: flex; 
+    margin: auto;  
+    display: flex;
     gap: 30px; 
     justify-content: center; 
     align-items: center;
-    box-shadow:8px 8px 8px #1C4E5C  }
+    box-shadow:8px 8px 8px black }
+
+    .projects{
+        text-align: center;
+    }
+
+    .project-more{
+        text-align: right;
+    }
     
     .project-lists{
         
     }
+
+    .image-one{
+        text-align: right;
+    }
     
+    .image-two{
+        text-align: right;
+    }
     .project-image-one{ 
-        border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    border: 5px solid #D4EBF2  ;
+    width: 250px;
+    height: 250px;
+    border: 5px solid #1C4E5C  ;
+    box-shadow:8px 8px 8px rgb(134, 134, 134)
     }
 
     .project-image-two{
-        border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    border: 5px solid #D4EBF2  ;
+    width: 250px;
+    height: 250px;
+    border: 5px solid #1C4E5C ;
+    box-shadow:8px 8px 8px rgb(134, 134, 134)
     
+    }
+
+    .contact{
+        color: #A9C936 ;
+        text-align: center;
+    }
+
+    footer{
+        text-align: center;
     }
