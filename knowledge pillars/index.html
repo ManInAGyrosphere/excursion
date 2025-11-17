@@ -3,10 +3,157 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <title>My First Webpage</title> <link rel="stylesheet" type="text/css" href="/styles.css">
   </head>
   <body>
     <h1>Welcome to My Site!</h1>
     <p>This is my very first webpage using HTML. I’m excited to learn more!</p>
   </body>
 </html>
+
+<button id="darkModeBtn">Toggle Dark Mode</button>
+
+<a href="">Page</a>
+
+<h1>About Me</h1>
+<p>Hi, I’m Jane. I love astronomy, biking, and building websites!</p>
+
+<h2>My Hobbies</h2>
+<ol>
+  <li>Stargazing </li>
+  <li>Hiking </li>
+  <li>Web Development </li>
+</ol>
+
+<h2 id="greeting">Hello, visitor!</h2>
+<button id="changeGreet">Click Me</button>
+
+<h3>Weekly Class Schedule</h3>
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Class</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td>Math</td>
+    <td>9:00 AM</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>English</td>
+    <td>10:00 AM</td>
+  </tr>
+</table>
+
+<section class="flex-showcase">
+  <h2>Things I Enjoy</h2>
+  <div class="flex-container">
+    <div class="box">Reading</div>
+    <div class="box">Gaming</div>
+    <div class="box">Coding</div>
+  </div>
+</section>
+
+<section class="grid-showcase">
+  <h2>Top Travel Spots</h2>
+  <div class="grid-container">
+    <div class="grid-item">Tokyo</div>
+    <div class="grid-item">Barcelona</div>
+    <div class="grid-item">Reykjavik</div>
+    <div class="grid-item">New York</div>
+  </div>
+</section>
+
+<section id="multimedia">
+  <h2>My Favorite Media</h2>
+
+  <h3>Watch This Video</h3>
+  <video width="400" controls>
+    <source src="myvideo.mp4" type="video/mp4">
+    Your browser does not support this video format.
+  </video>
+
+  <h3>Listen to This Audio</h3>
+  <audio controls>
+    <source src="mysong.mp3" type="audio/mpeg">
+    Your browser does not support this audio format.
+  </audio>
+</section>
+
+<iframe 
+  width="400" 
+  height="300" 
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  frameborder="0" 
+  allowfullscreen>
+</iframe>
+
+<h3>My School Location</h3>
+<iframe 
+  width="600" height="450" style="border:0" loading="lazy" allowfullscreen 
+  src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Lincoln+High+School">
+</iframe>
+<section id="location">
+  <h2>Visit My Favorite Spot</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.221079831339!2d-122.41941548468314!3d37.77492927975917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e28bcb1c171%3A0x8f8d56f8d7f8a16a!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1616638184897" 
+    width="100%" 
+    height="350" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</section>
+
+<section id="gallery"> 
+    <img src="photo1.jpg" alt="Photo 1"> 
+    <img src="photo2.jpg" alt="Photo 2"> 
+    <img src="photo3.jpg" alt="Photo 3"> 
+</section>
+
+<h3>Contact Me</h3>
+<form action="#" method="POST" id="contactForm">
+  <label for="fullname">Full Name:</label><br>
+  <input type="text" id="fullname" name="fullname" required><br><br>
+  
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="message">Your Message:</label><br>
+  <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+  
+  <button type="submit">Send</button>
+</form>
+
+<button id="alertBtn">Show Alert</button>
+
+<section id="browser-interaction">
+  <h2>Browser Interaction</h2>
+  <button onclick="alert('Thanks for visiting!')">Say Hello</button>
+</section>
+
+<form id="contactForm" onsubmit="return validateForm()"></form>
+
+<form onsubmit="return validateContactForm()"></form>
+
+<script>
+  function validateContactForm() {
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || message === "") {
+      alert("All fields are required! Please fill in your name, email, and message.");
+      return false;
+    }
+
+    if (!email.includes("@")) {
+      alert("Please enter a valid email address.");
+      return false;
+    }
+
+    return true; // All good — allow the form to submit
+  }
+</script>
